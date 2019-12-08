@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+/*  this is all of the formatting for the smallest media */
+.container {
+  margin: 0 auto;
+  padding: 10px 10px 10px 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #fefbd8;
+  color: #618685;
+}
+
+.error-text {
+  color: tomato;
+}
+input {
+  display: block;
+  margin: 10px;
+}
+
+button {
+  background-color: #80ced6;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 5px;
+}
+
+/* this is the special formatting if the window gets bigger */
+@media screen and (min-width: 750px) {
+  .container {
+    max-width: 1000px;
+  }
+  
+  input {
+    display: inline-block;
+  }
+
+  button {
+    display: block;
+  }
+}
