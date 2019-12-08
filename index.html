@@ -10,21 +10,22 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <section class="container" role="main">
+    <main class="container">
         <h1>Song Lyrics</h1>
         <form action="#" class="js-search-form">
-            <label for="artist">Artist:
-              <input type="text" id="artist" class="js-query-artist" placeholder="Queen" autofocus>
-            </label>
-            <label for="track">Song title:
-              <input type="text" id="track" class="js-query-title" placeholder="Under Pressure">
-            </label>
+          <fieldset name="lyric-search">
+            <legend>Search for lyrics by artist and song title</legend>
+            <label for="artist">Artist:</label>
+              <input type="text" id="artist" class="js-query-artist" placeholder="Queen" autofocus required>
+            <label for="track">Song title:</label>
+              <input type="text" id="track" class="js-query-title" placeholder="Under Pressure" required>
             <button type="submit">Search</button>
+          </fieldset>
         </form>
-        <div class="hidden" id="results">
+        <section class="hidden" id="results">
                 
-        </div>
-    </section>
+        </section>
+      </main>
     <script src="index.js"></script>
   </body>
 </html>
